@@ -9,3 +9,8 @@ This project plays around **Groovy** the language.
     ``` groovy
     println('Hello World.')
     ```
+
+
+# Why learning Groovy?
+
+Groovy is the programming language used for Jenkinsfile. 
