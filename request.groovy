@@ -1,0 +1,1 @@
+println new URL("https://cn-bulgari-webulgari-authentication-prod.lvmhda.cn/admin/health").text
