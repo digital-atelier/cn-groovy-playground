@@ -2,10 +2,19 @@ import groovy.json.JsonSlurper
 
 def jsonSlurper = new JsonSlurper()
 
-def object = jsonSlurper.parseText('{ "name": "John Doe" } /* some comment */')
+def jsonText = '''[
+  { 
+    "name": "John Doe"
+  },
+  { 
+    "name": "Karl Xu"
+  }
+]'''
 
-assert object instanceof Map
+def list = jsonSlurper.parseText(jsonText)
 
-assert object.name == 'John Doe'
+assert list instanceof ArrayList
 
-println object
+for (Map obj : list) {
+    println obj.name
+}
