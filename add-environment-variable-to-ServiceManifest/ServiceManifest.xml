@@ -8,7 +8,6 @@
    </ServiceTypes>
    
    <CodePackage Name="code" Version="VERSION">
-      <EnvironmentVariables></EnvironmentVariables>
       <EntryPoint>
          <ContainerHost>
             <ImageName>DOCKER_IMAGE</ImageName>
