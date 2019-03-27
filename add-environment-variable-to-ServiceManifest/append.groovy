@@ -14,4 +14,6 @@ def EnvironmentVariable = parser.createNode(
 EnvironmentVariable.value = 'test'
 
 // add node 
-ServiceManifest.CodePackage.EnvironmentVariables.add(0, EnvironmentVariable)
+ServiceManifest.CodePackage.EnvironmentVariables[0].children().add(0, EnvironmentVariable)
+
+println ServiceManifest.CodePackage.EnvironmentVariables.EnvironmentVariable.text()
